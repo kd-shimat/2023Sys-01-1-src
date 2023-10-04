@@ -9,7 +9,7 @@ $item = $product->getItem($ident);
 
 require_once  __DIR__  .  '/../header.php';	// header.phpを読み込む
 ?>
-<h3>商品詳細</h3>
+
 <form method="POST" action="../cart/cart_add.php"> <!-- カートに商品を入れる処理を行うPHP -->
 	<input type="hidden" name="ident" value="<?= $item['ident'] ?>"> <!-- 商品番号を送るため -->
 	<table>

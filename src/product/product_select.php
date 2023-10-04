@@ -18,7 +18,6 @@ $items = $product->getItems($genre);  // 抽出された商品データの結果
 require_once  __DIR__  .  '/../header.php';	// header.phpを読み込む
 ?>
 
-<h3>ジャンル別商品一覧</h3>
 <table>
 	<tr>
 		<th>&nbsp;</th>

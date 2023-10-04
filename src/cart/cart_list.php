@@ -1,8 +1,6 @@
 <?php
 require_once  __DIR__  .  '/../header.php';	// header.phpを読み込む
 ?>
-
-<h3>カートの商品</h3>
 <?php
 // カート内のすべてのデータを取り出す		
 $cartItems = $cart->getItems();
@@ -11,6 +9,7 @@ if (empty($cartItems)) {
 	echo '<a href="../index.php">ジャンル選択に戻る</a>';
 } else {
 ?>
+
 	<table>
 		<tr>
 			<th>&nbsp;</th>

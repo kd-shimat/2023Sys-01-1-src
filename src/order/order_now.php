@@ -17,7 +17,6 @@ $orderId = $order->addOrder($cartItems);
 require_once  __DIR__  .  '/../header.php';  // header.phpを読み込む
 ?>
 
-<h3>注文</h3>
 <p>お買い上げありがとうございました。<br>
   またのご利用をお待ちしております。</p>
 <table>

@@ -6,7 +6,6 @@ require_once  __DIR__  .  '/../header.php';	// header.phpを読み込む
 $cartItems = $cart->getItems();
 if (empty($cartItems)) {
 	echo '<h4>お客様のショッピングカートに商品はありません。</h4>';
-	echo '<a href="../index.php">ジャンル選択に戻る</a>';
 } else {
 ?>
 

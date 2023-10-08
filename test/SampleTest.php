@@ -55,7 +55,7 @@ class SampleTest extends TestCase
         $element_td = $this->driver->findElements(WebDriverBy::tagName('td'));
 
         //データベースの値を取得
-        $sql = 'select * from items where genre = ?';  // SQL文の定義
+        $sql = 'select * from items where genre = ?  order by ident asc';  // SQL文の定義
         $stmt = $this->pdo->prepare($sql);
         $stmt->execute(['pc']);
         $items = $stmt->fetchAll();
@@ -79,7 +79,7 @@ class SampleTest extends TestCase
 
         // ジャンル別商品一覧画面の詳細リンクをクリック
         $element_a = $this->driver->findElements(WebDriverBy::tagName('a'));
-        $element_a[5]->click();
+        $element_a[4]->click();
 
         // ジャンル別商品一覧画面のtdタグを取得
         $element_td = $this->driver->findElements(WebDriverBy::tagName('td'));
